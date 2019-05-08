@@ -8,7 +8,7 @@ We have 3 game options:
 Classic Game
     Collect as many cookies as you want. Use your bakers (Ian, Vicky, and Alex) to help you produce more cookies. Once you collect enough, you can also upgrade each baker. The Super Clicker makes each click worth 2x its value! PLAY NOW!
     
-    p.s. You can use this mode as practice for the 1 min challenge!</p>
+    p.s. You can use this mode as practice for the 1 min challenge!
 
 Custom Game
     Same as the classic game, but you can add your own baker! Oh man... PLAY NOW!
