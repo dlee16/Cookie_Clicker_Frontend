@@ -122,7 +122,7 @@ form.addEventListener('submit', (e) => {
           alert(`You scored ${highscore.highscore}! You are #${counter} out of ${sortedList.length} players`)
           if (counter <= 10) {
             document.querySelector("#header").innerHTML += `
-            <video controls="controls" width="800" height="600" autoplay = "true" name="Video Name" src="../evansCookie.MOV"></video> `
+            <video controls="controls" width="800" height="600" autoplay = "true" name="Video Name" src="./evansCookie.MOV"></video> `
 
             document.querySelector("video").addEventListener('ended', function () {
               document.querySelector("video").remove()
@@ -260,7 +260,7 @@ ian.addEventListener('click', (e) => {
     ianSpan.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ians}`
     cpsSpan.innerHTML = `${Math.round( cps * 10 ) / 10} cookies per second`
     document.querySelector("#addIan").innerHTML += `
-    <img src="../ian.jpg" width="70px" height="70px" alt="" class="circle responsive-img">
+    <img src="./ian.jpg" width="70px" height="70px" alt="" class="circle responsive-img">
     `
   }
 })
@@ -277,7 +277,7 @@ vicky.addEventListener('click', (e) => {
     vickySpan.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${vickys}`
     cpsSpan.innerHTML = `${Math.round( cps * 10 ) / 10} cookies per second`
     document.querySelector("#addVicky").innerHTML += `
-    <img src="../vicky.jpg" width="70px" height="70px" alt="" class="circle responsive-img">
+    <img src="./vicky.jpg" width="70px" height="70px" alt="" class="circle responsive-img">
     `
   }
 })
@@ -495,12 +495,12 @@ function renderStatsNew() {
 
 // fetches
 function fetchHighscores() {
-  return fetch('https://guarded-wildwood-23440.herokuapp.com/players')
+  return fetch('https://the-cookie-clicker.herokuapp.com/players')
   .then(res => res.json())
 }
 
 function fetchSubmitForm(body) {
-  return fetch('https://guarded-wildwood-23440.herokuapp.com/players', {
+  return fetch('https://the-cookie-clicker.herokuapp.com/players', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -549,7 +549,7 @@ function restart() {
 
 function startContainer() {
   return `
-  <div id="start-container" class="valign-wrapper center-align" style="padding-top: 100px;padding-bottom: 400px;background-image:url('../milk.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+  <div id="start-container" class="valign-wrapper center-align" style="padding-top: 100px;padding-bottom: 400px;background-image:url('./milk.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
     <div class="row">
     <div class="color-change"><h1 style="color: rgb(29, 136, 229);font-size:200px;padding-bottom: 120px"><span class="letter-change">C</span><span class="letter-change">o</span><span class="letter-change">o</span><span class="letter-change">k</span><span class="letter-change">i</span><span class="letter-change">e </span><span class="letter-change">C</span><span class="letter-change">l</span><span class="letter-change">i</span><span class="letter-change">c</span><span class="letter-change">k</span><span class="letter-change">e</span><span class="letter-change">r</span></h1></div>
 
