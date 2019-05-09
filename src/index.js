@@ -495,12 +495,12 @@ function renderStatsNew() {
 
 // fetches
 function fetchHighscores() {
-  return fetch('http://localhost:3000/players')
+  return fetch('https://guarded-wildwood-23440.herokuapp.com/players')
   .then(res => res.json())
 }
 
 function fetchSubmitForm(body) {
-  return fetch('http://localhost:3000/players', {
+  return fetch('https://guarded-wildwood-23440.herokuapp.com/players', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
